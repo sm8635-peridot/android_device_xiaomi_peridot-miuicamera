@@ -9,6 +9,9 @@ include vendor/xiaomi/peridot-miuicamera/BoardConfigVendor.mk
 
 MIUICAMERA_PATH := device/xiaomi/peridot-miuicamera
 
+# Camera - Miui
+$(call soong_config_set,camera,package_name,com.android.camera)
+
 # Properties
 TARGET_SYSTEM_PROP += $(MIUICAMERA_PATH)/system.prop
 TARGET_VENDOR_PROP += $(MIUICAMERA_PATH)/vendor.prop
